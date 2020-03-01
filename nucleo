@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+tinygo build -o bin.bin -target=NUCLEO-F103RB  .
+cp bin.bin /media/$USER/NODE_F103RB/bin.bin
